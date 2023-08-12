@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+    background-image: url("Ancient Greece Reloaded.jpg");
+    background-size: contain;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 400px;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 800px;
+    margin: 0px auto;
+}

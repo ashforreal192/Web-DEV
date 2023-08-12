@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #344e41;
+}
+
+#container {
+    background-color: #d0f4de;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #d0f4de;
+    display: flex;
+    flex-direction: column;
+    /*Flex direction can be set and manipulated in any way desired.  */
+    justify-content: center;
+    /* The justify-content property in CSS is used to align and distribute 
+    space between flex items along the main axis of a flex container. */
+    /* flex-wrap: wrap; */
+    /* Flex wrap makes the size of each div retain itself */
+    align-items: center;
+    /* The align-items property in CSS is used to control the alignment 
+    of flex items along the cross-axis of a flex container. */
+
+    /* The align-content property in CSS is used to control the alignment of 
+    multiple lines of flex items within a flex container. 
+    It is applicable when there are multiple lines 
+    of flex items and there is extra space available on the cross-axis. */
+
+    /* The flex-grow property in CSS is used to specify how much a flex item should grow relative to 
+    other flex items within the same flex container when there is extra space available along the main axis.*/
+
+    /* The flex-shrink property in CSS is used to specify how much a flex item should shrink relative 
+    to other flex items within the same flex container when there is not enough space available along the main axis.*/
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+    color: #d90429;
+    text-align: center;
+}

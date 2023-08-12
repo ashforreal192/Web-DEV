@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #f48c06;
+    border-radius: 20%;
+    border-top-left-radius: 50%;
+}
+
+.circle:hover {
+    background-color: #dc2f02;
+    border-radius: 50%;
+    transition: border-radius 1s 2s;
+    /* Represents time taken for the transition */
+    /* By mentioning a specific property before the transition
+duration we can fix the transition to take the 
+specified amount of time only for the mentioned property. 
+Like i mentioned border radius bofre 1 sec */
+    /* And the 3s again applies to everything else. */
+}
+
+p {
+    color: purple;
+    font-size: 40px;
+    text-align: center;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: #bee9e8;
+    margin: 20px 0px;
+}
+
+section:hover div {
+    margin-left: 500px;
+    transition: 1s;
+    transition-timing-function: ease-in;
+}
+
+/* Also keep in mine that a function called transition-timing-function also exists. */

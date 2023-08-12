@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(67, 67, 67);
+}
+
+h2 {
+    color: red;
+    background-color: yellow;
+}
+
+h1 {
+    color: rgba(47, 255, 0, 0.844);
+}
+
+h3 {
+    color: teal;
+}
+
+button {
+    color: blue;
+    background-color: cyan;
+}
+
+p {
+    color: orange;
+    background-color: black;
+}

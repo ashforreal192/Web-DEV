@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+
+section {
+    width: 80%;
+    height: 800px;
+    background-image: url(download.jpeg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 70px;
+    color: white;
+}

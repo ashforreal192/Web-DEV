@@ -1,0 +1,174 @@
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-decoration: black underline wavy;
+    /* Important */
+    color: aqua;
+    font-size: 70px;
+    /* font sizes can be represented in pixels too. */
+    font-family: arial, helvetica, geneva, sans-serif;
+    /*The commas are used to depict substitute fonts. In case, if the first font is not there, it will automatically apply the second one and so on.
+    We can either write specific fonts here or rather just mention a font family and let the browser choose the specific font.
+    Or if we are writing specific fonts, then it's a good idea to mention a font family at the end, to let the browser have an outlet to choose if none of the
+    mentioned fonts can be applies.*/
+}
+
+h2 {
+    color: rgb(246, 255, 0);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(246, 255, 0);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+    font-weight: 600;
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(82, 24, 24);
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-style: normal;
+    /*Kept this normal even though for paragraphs, I've kept it in italic.*/
+}
+
+form {
+    text-align: center;
+}
+
+span {
+    color: blueviolet;
+}
+
+/* Class selector symbol is just a dot. Like the one before tag */
+.tag {
+    background-color: aquamarine;
+    color: blue;
+}
+
+button {
+    background-color: #023047;
+    color: #8ecae6;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Changes the radius of the background border.*/
+    border-radius: 10px;
+}
+
+/* Inline elements can't be aligned just by text alignment as they only take the space of their own width. So an inline element like button, anchor tag
+needs to be wrapped up inside a block element like div to be aligned at a block level. */
+div {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    /*Making this specific button different just as an example.*/
+}
+
+ul li {
+    color: #ff8fab;
+}
+
+ol li {
+    color: #e4c1f9;
+}
+
+.myUL {
+    display: inline-block;
+    text-align: left;
+}
+
+.myOL {
+    display: inline-block;
+    text-align: left;
+}
+
+.listHEAD {
+    color: #7209b7;
+}
+
+/* Note: Difference between the significance of id and class in the context of css?
+
+In CSS, the id selector is used to select and style a single unique element on a page.
+An id is defined using the # symbol followed by a unique identifier, and can only be used once per page.
+On the other hand, the class selector is used to select and style multiple elements on a page that share the same styles.
+A class is defined using the . symbol followed by a class name, and can be used multiple times per page.
+So, the difference between the significance of id and class in CSS is that the id selector is used to select and style a single unique element, 
+while the class selector is used to select and style multiple elements that share the same styles.
+ */
+
+/* COMBINATORS */
+
+/* Adjacent selectors */
+input+button {
+    background-color: greenyellow;
+    color: black;
+    font-size: 30px;
+}
+
+/* Direct descendent selectors */
+div>p>a {
+    color: beige;
+    text-decoration: underline;
+}
+
+/* Attribute selector */
+/* Fun fact: class and id are also considered to be attributes. */
+input[type=password] {
+    color: #ee9b00;
+    background-color: #bde0fe;
+}
+
+/* We can also write section.seccc instead of what we wrote. */
+section[class=seccc] {
+    background-color: #8ecae6;
+}
+
+a[href=awdawdadw] {
+    color: #0d21a1;
+}
+
+/* PSEUDO CLASSES */
+/* 1. Hover */
+/* When the user hovers over an element, it triggers the hover state, allowing you to apply specific styles to that element. */
+button:hover {
+    background-color: #eec643;
+    color: #6a4c93;
+}
+
+/* 2. Active */
+/* The "active" pseudo-class in CSS is used to select and style an element that is currently being activated, such as when a user clicks on a button or link. 
+The style applied to the "active" element is usually temporary and changes only during the time that the element is being clicked or pressed down. */
+button:active {
+    background-color: #023047;
+    color: #e63946;
+}
+
+/* PSEUDO ELEMENTS */
+/* The definitions are mostly in the names. */
+h2::first-letter {
+    font-size: 50px;
+}
+
+h3::first-letter {
+    font-size: 40px;
+}
+
+p::first-line {
+    font-size: 25px;
+    font-style: arial;
+}
+
+p::selection {
+    background-color: #7209b7;
+}

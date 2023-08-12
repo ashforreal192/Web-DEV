@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+button {
+    margin: 10px;
+    padding: 40px;
+    color: #F79540;
+    background-color: #E3F2C1;
+    font-size: 30px;
+    font-family: serif;
+}
+
+button:hover {
+    color: #B71375;
+    background-color: #9384D1;
+    padding: 45px;
+    box-shadow: 10px 10px 30px #05BFDB;
+    transform: translateY(-7px);
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
