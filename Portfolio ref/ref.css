@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+#nav a {
+    text-decoration: none;
+    font-family: "General Sans Medium";
+    font-weight: 100;
+    font-size: 30px;
+    color: white;
+}
+
+#nav h4 {
+    font-size: 20px;
+}
+
+#heading {
+    margin-top: 90px;
+}
+
+#heading h1 {
+    margin-left: 30px;
+    opacity: 0.6;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-weight: 900;
+}
+
+#heading #secondh1 {
+    margin-left: 230px;
+    opacity: 0.7;
+    color: #000814;
+}
+
+.textmerge {
+    padding-top: 1%;
+    padding-right: 5%;
+    width: fit-content;
+    background-color: white;
+    opacity: 0.6;
+
+}
+
+.textmerge h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: right;
+    color: black;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+#smallHeadings {
+    margin-top: 100px;
+    padding-right: 30px;
+}
+
+#smallHeadings h5 {
+    text-transform: uppercase;
+    margin-top: 0.5vw;
+    text-align: right;
+    font-size: 1vw;
+}
+
+#herofooter {
+    padding: 0 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#herofooter a {
+    color: #778da9;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#herofooter .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #888;
+}
