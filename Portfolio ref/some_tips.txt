@@ -1,0 +1,14 @@
+locomotive css
+locomotive js cdn
+
+
+Smooth locomotive JS:
+Basically this code:
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+
+gsap cdn (First link)
