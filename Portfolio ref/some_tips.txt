@@ -1,8 +1,8 @@
-locomotive css
-locomotive js cdn
+1. locomotive css
+2. locomotive js cdn
 
 
-Smooth locomotive JS:
+3. Smooth locomotive JS:
 Basically this code:
 import LocomotiveScroll from 'locomotive-scroll';
 
@@ -11,4 +11,6 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-gsap cdn (First link)
+4. gsap cdn (First link)
+
+5. gsap utils (search for clamps, "to shrink the mouse")
