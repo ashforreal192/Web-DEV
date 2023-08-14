@@ -32,9 +32,7 @@ function firstPageAnim() {
     })
 }
 
-
-function circleChapta() {
-
+function circleChaptakaro() {
     var xscale = 1
     var yscale = 1
 
@@ -42,20 +40,25 @@ function circleChapta() {
     var yprev = 0
 
     window.addEventListener("mousemove", function (dets) {
+        clearTimeout(timeout)
+
         var xdiff = dets.clientX - xprev
         var ydiff = dets.clientY - yprev
 
         xprev = dets.clientX
         yprev = dets.clientY
 
-        xscale = gsap.util.clamp(0.8, 1.2, xdiff)
-        yscale = gsap.util.clamp(0.8, 1.2, ydiff)
+        xscale = gsap.utils.clamp(0.8, 1.2, xdiff)
+        yscale = gsap.utils.clamp(0.8, 1.2, ydiff)
+
+        timeout = setTimeout(function () {
+            document.querySelector("#circleScroll").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(1,1)`;
+        }, 100)
+
     })
 }
-circleChapta();
 
-
-function MouseFollower() {
+function MouseFollower(xscale, yscale) {
     window.addEventListener("mousemove", function (dets) {
         document.querySelector("#circleScroll").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px)`;
     })
