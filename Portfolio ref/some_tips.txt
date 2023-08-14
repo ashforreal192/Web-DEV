@@ -14,3 +14,6 @@ const scroll = new LocomotiveScroll({
 4. gsap cdn (First link)
 
 5. gsap utils (search for clamps, "to shrink the mouse")
+
+
+
