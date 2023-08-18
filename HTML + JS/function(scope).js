@@ -69,3 +69,66 @@ function RollDie() {
 callTwice(RollDie)
 console.log("Break")
 callTentimes(RollDie)
+
+
+// Returning Functions
+
+function Mysteryfunc() {
+    const rand = Math.random()
+    if (rand > 0.5) {
+        return function () {
+            console.log("Congrats")
+            console.log("You win a million dollars!!")
+        }
+    }
+    else {
+        return function () {
+            alert("You've been infected by a computer!")
+        }
+    }
+}
+const mystery = Mysteryfunc()
+console.log(mystery)
+
+// Example
+
+function ageJudgement(min, max) {
+    return function (num) {
+        return num >= min && num <= max
+    }
+}
+
+const isChild = ageJudgement(0, 18)
+const isAdult = ageJudgement(19, 60)
+const isSenior = ageJudgement(61, 90)
+
+function ageResponse(age) {
+    if (isChild(age)) {
+        return "You're a kid"
+    } else if (isAdult(age)) {
+        return "You're an adult";
+    } else if (isSenior(age)) {
+        return "You're a senior citizen";
+    } else {
+        return "Age range not defined";
+    }
+}
+
+const age = 30
+// Change the value of 'age' and see the response changing
+const response = ageResponse(age)
+console.log(response)
+
+// Defining methods. Through Objects
+const myMAth = {
+    PI: 3.14159,
+    square(num) {
+        return num * num
+    },
+    cube(num) {
+        return num ** 3
+    }
+}
+console.log(myMAth.square(3))
+console.log(myMAth.cube(5))
+console.log(myMAth.cube(2) * myMAth.PI)

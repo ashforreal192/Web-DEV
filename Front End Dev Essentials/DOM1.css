@@ -1,0 +1,21 @@
+* {
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+}
+
+/* h1:hover {
+    cursor: pointer;
+} */
+
+h2 {
+    color: white;
+}
