@@ -9,7 +9,7 @@
 
 // And if any code is being written which dosen't contain any of the aforementioned codes, then it's a synchronous code.
 
-// Demo of an async coe:
+// Demo of an async code:
 console.log("hey")
 setTimeout(function(){
     console.log("hey2")
