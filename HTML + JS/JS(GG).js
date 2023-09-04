@@ -29,7 +29,7 @@ while (parseInt(guess) !== targetNum) {
 }
 
 if (guess !== "q" && attempts === 1) {
-    console.log(`It took you only ${attempts} guess!`)
+    console.log(`It took you only one guess!`)
 } else if (guess !== "q") {
     console.log(`It took you ${attempts} guesses!`);
 }

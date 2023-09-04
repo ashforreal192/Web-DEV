@@ -1,7 +1,5 @@
 // Selecting HTML
 var a = document.querySelector("h1")
-console.log(a)
-
 var b = document.querySelector("h2")
 
 

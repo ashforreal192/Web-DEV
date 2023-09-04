@@ -1,8 +1,8 @@
 let input = prompt("What would you like to do?")
-const todo = ["", "Complete assignment", "Pay loan back", "Buy eggs"]
+const todo = [""]
 while (input !== "quit" && input !== "q") {
 
-
+// Views the list of whatever's been entered by the coder
     if (input === "list") {
         console.log("********")
         for (let i = 1;
@@ -13,6 +13,7 @@ while (input !== "quit" && input !== "q") {
         }
         console.log("********")
     }
+// To enter a new todo
     else if (input === "new") {
         const newtodo = prompt("What is the new todo?")
         todo.push(newtodo)
