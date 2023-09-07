@@ -22,4 +22,5 @@ btn.addEventListener("click", function () {
         btn.style.backgroundColor = "white"
         bulbStatus = 0
     }
+    
 })
