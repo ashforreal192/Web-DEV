@@ -43,3 +43,5 @@ console.log(colors.splice(3, 2))
 // Deletes two components starting from index no. 3 and 
 // deleting two components starting from there including 3.
 
+console.log(colors)
+

@@ -88,7 +88,7 @@ console.log(this);
 function abab() {
     console.log(this)
 }
-function abab()
+abab()
 
 // In method scope, it gives object obj.
 // In any method, "this" keyword always refers to parent object

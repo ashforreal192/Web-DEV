@@ -5,6 +5,7 @@ function collectEggs() {
 console.log(totalEggs)
 collectEggs()
 console.log(totalEggs)
+// Shows two different results. First it will show 0 and after applying the function, it'll show 6
 
 
 function bankRobbery() {
@@ -61,13 +62,17 @@ function callTentimes(decade) {
     }
 }
 
+// Funtion which is to be applied depending on the number of times we are throwing the die.
 function RollDie() {
     const dieNum = Math.floor(Math.random() * 6) + 1
     console.log(dieNum)
 }
 
+
+// Two die roll result
 callTwice(RollDie)
 console.log("Break")
+// Ten die roll result
 callTentimes(RollDie)
 
 
