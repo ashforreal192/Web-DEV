@@ -4,11 +4,9 @@
 
 // Accepts a function
 function abcd(val) {
-
 }
 abcd(function () { })
 // Accpets another function
-
 // OR
 function abcd() {
     return function () { }
