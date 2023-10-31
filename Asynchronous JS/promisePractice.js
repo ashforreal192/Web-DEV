@@ -1,4 +1,4 @@
-function fakeRequestPromise(url) {
+const fakeRequestPromise = (url) => {
     // Implement the fakeRequestPromise function logic here
     // Return a promise, simulate an API call, etc.
     // For example:

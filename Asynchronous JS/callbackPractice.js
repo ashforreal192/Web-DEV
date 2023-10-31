@@ -77,3 +77,20 @@ async function waitForRainbow() {
     console.log("End of rainbow!")
 }
 // Basically the same code as before.
+
+
+
+// Just a random info:
+// Await can also be stored in a variable
+
+async function makeTwoRequests() {
+    try{
+    let data1 = await fakeRequest('/page1')
+    console.log(data1)
+    let data2 = await fakeRequest('/page2')
+    console.log(data2)
+    } catch(e){
+    console.log("Caught an error!")
+    console.log("Error is:", e)    
+    }
+}
