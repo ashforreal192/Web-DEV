@@ -29,14 +29,29 @@ starWarsPerson(7)
 // But to figure out this about APIs, it's necessary to read the documentation of the API before working.
 
 
+
+const jokes = document.querySelector("#jokes")
+const button = document.querySelector("button")
+
+const addNewJoke = async () => {
+    const jokeText = await getDadJoke()
+    // console.log(jokeText)
+    const newLI = document.createElement("li")
+    newLI.append(jokeText)
+    jokes.append(newLI)
+}
+
 const getDadJoke = async () => {
     try{
-        const res = await axios.get("https://icanhazdadjoke.com/")
-        console.log("Here's your dad joke", res)
+        const config = {headers: {Accept: 'application/json'}}
+        const res = await axios.get("https://icanhazdadjoke.com/", config)
+        return res.data.joke
+        // console.log("Here's your dad joke", res)
+        // console.log(res.data.joke)
     }
     catch(e){
         console.log("Uh oh, looks like a laugh wasn't in your luck today", e)
     }
 }
 
-getDadJoke()
+button.addEventListener("click", addNewJoke)
