@@ -12,6 +12,9 @@ return fetch("https://swapi.dev/api/people/2/")
 })
 .then((data) => {
     console.log(data)
+
+
+    
     console.log("BREAK!!!!!!!!!!!!!")
     console.log("BREAK!!!!!!!!!!!!!")
     console.log("BREAK!!!!!!!!!!!!!")
