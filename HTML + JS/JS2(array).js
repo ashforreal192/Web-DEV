@@ -11,7 +11,7 @@ let pets = cats.concat(dogs)
 console.log(pets)
 
 
-// Include: Outcome is a boolean response and it shows if something is there or not inside an array.
+// Includes: Outcome is a boolean response and it shows if something is there or not inside an array.
 console.log(cats.includes("Barbeque"))
 console.log(cats.includes("Kitty"))
 
