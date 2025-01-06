@@ -1,7 +1,16 @@
 // Push adds components to the end of an array.....array.push("component")
+let myArr = [1, 2, 3, 4]
+myArr.push(5, 7)
+console.log(myArr)
 // Pop removes components from the end of arrays.....array.pop("component")
+myArr.pop()
+console.log(myArr)
 // Shift removes components from the start of arrays.....array.shift("component")
+myArr.shift()
+console.log(myArr)
 // Unshift adds components to the start of arrays......array.unshift("component")
+myArr.unshift(9)
+console.log(myArr)
 
 // concat merges arrays.
 let cats = ["Biu", "Kitty", "Diana"]
