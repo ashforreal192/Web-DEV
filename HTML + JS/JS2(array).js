@@ -18,6 +18,23 @@ let dogs = ["Bruno", "Pluto", "Scooby", "Shepherd"]
 // Code is as follows:
 let pets = cats.concat(dogs)
 console.log(pets)
+// Another way to concat two arrays (This is known as spread operator):
+let allPets = [...cats, ...dogs]
+console.log(allPets)
+
+// A method to decipher an array which has a depth more than 1:
+const anArr = [1, 2, [3, 4, 5], 6, 7]
+const realArr = anArr.flat(2)
+// Inside the bracket, we are supposed to write the depth we want the array to be deciphered down to. Here it would be 2.
+const realArr2 = anArr.flat(Infinity)
+// But we can also write infinity, it will just decipher the array down to the entire depths available.
+console.log(realArr)
+console.log(realArr2)
+
+// Converting a non-array datatype into an array
+console.log(Array.isArray.apply("Shatodru")) // Will give boolean response. Clearly not an array. It's a string
+// Now the conversion:
+console.log(Array.from("Shatodru"))
 
 
 // Includes: Outcome is a boolean response and it shows if something is there or not inside an array.
