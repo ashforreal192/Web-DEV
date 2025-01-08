@@ -80,4 +80,80 @@ const comments = [
         username: "ash", text: "hell yeah!!!", likes: "200"
     }
 ]
-console.log(comments[1].text)
+console.log(comments[1].text) // O/P: "hell yeah!!!"
+
+
+
+// Difference between a singleton object and a non-singleton object declaration:
+const tinderuser = new Object() // Singleton obejct. Declared using a constructor.
+const tinderuser2 = {} // Non-Singleton obejct
+// Adding values in tinderuser2
+tinderuser2.id = "123abc"
+tinderuser2.name = "Samay"
+tinderuser2.isLoggedIn = false
+console.log(tinderuser)
+console.log(tinderuser2)
+// Printing just the keys:
+console.log(Object.keys(tinderuser2)) // o/p is of data type array. A useful fact to remember
+// Printing just the values:
+console.log(Object.values(tinderuser2))
+// Printing the entires individually.
+console.log(Object.entries(tinderuser2))
+// Asks if there is a particular key present in the object. Returns a boolean value.
+console.log(tinderuser2.hasOwnProperty("isLoggedIn")) // True
+console.log(tinderuser2.hasOwnProperty("isLoggedOff")) // False
+
+
+
+// Nested objects:
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        firstName: "Hitesh",
+        lastName: "Chaudhary"
+    }
+}
+console.log(regularUser.fullname);
+console.log(regularUser.fullname.lastName);
+
+
+
+// Combining objects:
+const obj1 = {
+    1: "a", 2: "b"
+}
+const obj2 = {
+    3: "c", 4: "d"
+}
+
+//Method 1
+const obj3 = Object.assign(obj1, obj2)
+console.log(obj3);
+
+// Method 2
+const obj4 = Object.assign({}, obj1, obj2) // Same o/p but a better method because inside the assign method, the first object is the target object and the later ones are source objects which are always merged with the target one.
+// So an empty object before the other ones guarantees that all the objects to be merged are treated as source objects.
+console.log(obj4);
+
+// Method3
+const obj5 = {...obj1, ...obj2} // Spread method
+console.log(obj5);
+
+
+// Objects inside array:
+const users = [
+    {
+        id: "id1",
+        name: "name1"
+    },
+    {
+        id: "id2",
+        name: "name2"
+    },
+    {
+        id: "id3",
+        name: "name3"
+    }
+]
+console.log(users[0].name)
+console.log(users[1].id)
