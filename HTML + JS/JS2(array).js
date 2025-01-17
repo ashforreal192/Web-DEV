@@ -47,6 +47,7 @@ console.log(pets.reverse())
 
 // Slice: returns a shallow copy of a portion
 // of an array into a new array object selected from start to end
+// Doesn't change the original array
 console.log(pets.slice(2))
 console.log(pets.slice(1, 4))
 // For the last three elements to show.
@@ -55,6 +56,7 @@ console.log(pets.slice(-3))
 
 // Splice: The splice() method changes the contents of an array by removing or 
 // replacing existing elements and/or adding new elements in place
+// Changes the original array
 let colors = ["red", "yellow", "green", "blue", "indigo", "violet"]
 
 console.log(colors.splice(3, 0, "white"))
