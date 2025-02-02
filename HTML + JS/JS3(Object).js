@@ -32,7 +32,7 @@ const mySymbol = Symbol("key1") // THis varibale is declared to demonstrate how 
 let restaurant = {
     name: 'Ichiran Ramen',
     address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
-    [mySymbol]: "myKey1", // For the data type to be a symbol, the key needs to be put inside square brackets. It won't
+    [mySymbol]: "myKey1", // For the data type to be a symbol, the key needs to be put inside square brackets. Even though, It won't
     // give an error otherwise but the data type wouldn't be a symbol, it would be a string instead.
     city: 'Brooklyn',
     state: 'NY',
