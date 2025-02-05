@@ -12,3 +12,6 @@ function(){}
 
 It can be stored in a variable as well:
 const myFunction = function(){}
+
+null => stand-alone value (Empty, we can assign null to something, datatype of null is object)
+undefined => Means that a value hasn't been assigned yet (datatype of undefined is simply undefined)
