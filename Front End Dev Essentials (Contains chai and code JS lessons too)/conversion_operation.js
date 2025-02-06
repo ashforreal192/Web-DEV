@@ -27,7 +27,7 @@ let valueInNumber4 = Number(score4)
 console.log(typeof valueInNumber4);
 console.log(valueInNumber4);
 
-// For undefine to number
+// For undefined to number
 let score5 = undefined
 console.log(typeof score5)
 let valueInNumber5 = Number(score5)

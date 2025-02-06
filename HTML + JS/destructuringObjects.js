@@ -19,3 +19,16 @@ const personTwo = {
 const {name: fName, age: aliveFor} = personTwo
 console.log(fName)
 console.log(aliveFor)
+
+
+
+
+// One more example
+const course = {
+    courseInstructor: "Shatodru",
+    courseName: "Guitar tutorials"
+}
+
+const {courseName: CN, courseInstructor: CI} = course
+console.log(CN);
+console.log(CI);
