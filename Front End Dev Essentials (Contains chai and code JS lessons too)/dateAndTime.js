@@ -9,7 +9,7 @@ console.log(myCreatedDate.toDateString())
 console.log(myCreatedDate.toLocaleString())
 
 
-let myCreatedDate2 = new Date(2023, 0, 24, 5, 3)
+let myCreatedDate2 = new Date(2023, 0, 24, 5, 3) // 5 and 3 translates to time. Meaning 5:03 am
 console.log(myCreatedDate2.toDateString())
 console.log(myCreatedDate2.toLocaleString())
 

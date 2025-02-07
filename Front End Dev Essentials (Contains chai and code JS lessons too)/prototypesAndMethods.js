@@ -1,3 +1,5 @@
+// JavaScript is a prototype-based, automatically adds a prototype property to functions upon creation.
+// This prototype object allows attaching methods and properties, facilitating inheritance for all objects created from the function.
 // how to access the prototype for a string?
 // example:
 const gameName = new String("Shatodru-Sarkar")
