@@ -1,10 +1,11 @@
 let totalEggs = 0
 function collectEggs() {
     totalEggs = 6
+    console.log(totalEggs)
 }
 console.log(totalEggs)
 collectEggs()
-console.log(totalEggs)
+// console.log(totalEggs)
 // Shows two different results. First it will show 0 and after applying the function, it'll show 6
 
 

@@ -8,10 +8,10 @@ console.log("Result: ", result) //o/p: Output: undefined. The function `addTwoNu
 
 
 // If you want the function to return the sum instead of just logging it, you can modify it like this:
-function addTwoNums(number3, number4) {
+function addTwoNums2(number3, number4) {
     return number3 + number4; // Return the sum instead of logging it
 }
-let result2 = addTwoNums(10, 11)
+let result2 = addTwoNums2(10, 11)
 console.log("Result: ", result2); // Output: Result: 14
 
 
@@ -46,6 +46,35 @@ const user2 = {
     username: "shawtty",
     price: 199
 }
+
 function handleObject (anyObject) {
-    console.log()    
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`)    
 }
+handleObject(user2)
+
+
+// OR:
+// We can use object literal: Instead of passing a pre-declared object like user2, we directly pass an object literal
+function handleObject2 (anyObject2) {
+    console.log(`Username is ${anyObject2.username} and price is ${anyObject2.price}`)
+}
+handleObject2 ({
+    username: "riya",
+    price: 155
+})
+
+// We can do the same with arrays:
+const myArray = [1, 2, 3, 4]
+function returnMentionedValue (getArray) {
+    return getArray[2]
+}
+console.log(returnMentionedValue(myArray));
+
+// OR:
+
+function returnMentionedValue2 (getArray2) {
+    return getArray2[1]
+}
+console.log(returnMentionedValue2([3, 4, 5, 6]));
+
+
