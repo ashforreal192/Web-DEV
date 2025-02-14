@@ -76,5 +76,3 @@ function returnMentionedValue2 (getArray2) {
     return getArray2[1]
 }
 console.log(returnMentionedValue2([3, 4, 5, 6]));
-
-
