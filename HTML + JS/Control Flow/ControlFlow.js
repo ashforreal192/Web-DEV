@@ -1,5 +1,5 @@
 // Control flow in JavaScript refers to the order in which statements in a program are executed.
-// It determines the path the program takes, deciding which blocks of code are run and which are skipped, based on conditions, loops, and function calls. 
+// It determines the path the program takes, deciding which blocks of code are run and which are skipped, based on conditions, loops, and function calls.
 // Essentially, it's the logic that directs the execution of your code.
 
 
@@ -13,5 +13,5 @@ if (userLoggedIn && debitCard){
 } // won't be successful even if one is false
 
 if (loggedInFromGoogle || loggedInFromGmail){
-    console.log("Allow to buy course");
+    console.log("User logged in");
 } // will be successful even if one is false
