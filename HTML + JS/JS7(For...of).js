@@ -62,3 +62,74 @@ for (let scores of marks) {
 }
 console.log(total / marks.length)
 console.log(total)
+
+
+// Maps:
+const map = new Map()
+map.set("IN", "India")
+map.set("Pak", "Pakistan")
+map.set("FR", "France")
+console.log(map);
+
+for (const [keys, values] of map) {
+    console.log(keys, ":-", values);
+    
+}
+
+
+// For objects: (For-in loop is used here for objects)
+const myGames = {
+    game1: "NFS",
+    game2: "God of War",
+    game3: "Sleeping Dogs"
+}
+for (let element in myGames) {
+    console.log(element, ":", myGames[element]);
+    console.log(element);
+    console.log(myGames[element]);
+}
+
+
+// High order array loops:
+const coding = ["js", "ruby", "java", "python"]
+coding.forEach(
+    function(item){
+        console.log(item); // Will print all the elements from the array.        
+    }
+)
+// Same thing using arrow functions:
+coding.forEach(
+    (val) => {
+        console.log(val); // Will print all the elements from the array.        
+    }
+)
+// Additional parameters you can learn about:
+coding.forEach(
+    (item, index, arr) => {
+        console.log(item, index, arr);        
+    }
+)
+
+// For arrays with objects inside:
+const myCoding = [
+    {
+        languageName: "JavaScript",
+        langauageFileName: "JS"
+    },
+    {
+        languageName: "Python",
+        langauageFileName: "py"
+    },
+    {
+        languageName: "Cascading Style Sheets",
+        langauageFileName: "css"
+    }
+]
+myCoding.forEach(
+    (item, arr) => {
+        console.log(item);
+        console.log(item.langauageFileName);
+        console.log(item.languageName);
+        console.log(arr);
+    }
+)

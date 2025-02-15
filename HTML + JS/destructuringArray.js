@@ -1,3 +1,8 @@
+// Destructuring in JavaScript:
+// Destructuring is a feature in JavaScript that allows you to extract values from arrays or properties from objects and assign them to variables in a more concise way.
+// It helps in making the code more readable and efficient.
+
+
 // Array destructuring:
 const alphabets = ['A', 'B', 'C', 'D', 'E', 'F']
 const numbers  = ['1', '2', '3', '4']
@@ -29,4 +34,3 @@ const [sum, multiply] = sumAndMultiply(4, 5)
 console.log(sum)
 console.log(multiply)
 console.log(sum, multiply)
-
