@@ -76,6 +76,20 @@ for (const [keys, values] of map) {
     
 }
 
+// Another application of maps:
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8]
+const newNums = myNumbers.map((numss) => {
+    return numss + 10
+})
+console.log(newNums);
+
+// We can also perform chaining using maps: (Refer to the array above)
+const newNums2 = myNumbers
+                    .map((num) => {return num + 15}) // Let's say this produces array1 with each element + 15 in it.
+                    .map((num) => {return num * 10}) // Elements of array1 will be considered here with which 10 would be multiplied.
+                    .filter((num) => {return num > 180}) // Also including filter into the chain.
+console.log(newNums2);
+
 
 // For objects: (For-in loop is used here for objects)
 const myGames = {
