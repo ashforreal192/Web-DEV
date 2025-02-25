@@ -40,24 +40,48 @@
 
 const delayedColorChange = (color, delay) => {
     return new Promise((resolve, reject) => {
+        if(!color){
+            reject("Color required")
+        }
+        else{
         setTimeout(() => {
             document.body.style.backgroundColor = color
-            resolve()
+            resolve(`Background changed to ${color}`)
         }, delay)
+        }
     })
 }
 
 // delayedColorChange("red", 1000)
-// .then(() => delayedColorChange("orange", 1000))
-// .then(() => delayedColorChange("teal", 1000))
-// .then(() => delayedColorChange("green", 1000))
-// .then(() => delayedColorChange("blue", 1000))
-// .then(() => delayedColorChange("violet", 1000))
+// .then((msg) => {
+//     console.log(msg);    
+//     delayedColorChange("orange", 1000)
+// })
+// .then((msg) => {
+//     console.log(msg)
+//     delayedColorChange("teal", 1000)
+// })
+// .then(() => {
+//     console.log(msg)
+//     delayedColorChange("green", 1000)
+// })
+// .then(() => {
+//     console.log(msg);    
+//     delayedColorChange("blue", 1000)
+// })
+// .then(() => {
+//     console.log(msg);        
+//     delayedColorChange("violet", 1000)
+// })
+// .catch((err) => {
+//     console.log("Error:", err)
+// })
 
 
 // Now using async and await:
 
 async function rainbow() {
+    try{
     await delayedColorChange("red", 1000)
     await delayedColorChange("orange", 1000)
     await delayedColorChange("yellow", 1000)
@@ -66,6 +90,11 @@ async function rainbow() {
     await delayedColorChange("indigo", 1000)
     await delayedColorChange("violet", 1000)
     return "All done!"
+    }
+    catch(e){
+        console.log(e, "Caught error");
+        throw e     
+    }
 }
 
 // We can apply then after an entire function is executed completely as well. (Uncomment the code below to see)
@@ -73,7 +102,14 @@ async function rainbow() {
 
 // OR
 async function waitForRainbow() {
-    await rainbow()
-    console.log("End of rainbow!")
+    try {
+        let message = await rainbow()
+        console.log(message);    
+        console.log("End of rainbow!")
+    }
+    catch(e){
+        console.log(e, "Error in waitForRainbow");
+        
+    }
 }
 // Basically the same code as before.

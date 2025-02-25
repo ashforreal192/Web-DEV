@@ -1,4 +1,4 @@
-fakeRequest((URL) => {
+const fakeRequest = (URL) => {
     return new Promise((resolve, reject) => {
         const delay = Math.floor(Math.random() * 4500) + 500
         setTimeout(() => {
@@ -10,7 +10,8 @@ fakeRequest((URL) => {
             }
         }, delay)
     })
-})
+}
+
 
 
 // Await can also be stored in a variable

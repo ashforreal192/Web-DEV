@@ -20,11 +20,11 @@ const login = async(username, password) => {
 }
 
 login("agydygdwagiydaw", "ricknmorty")
-.then(msg => {
+.then((msg) => {
     console.log("Logged in!")
     console.log(msg)
 })
-.catch(err => {
+.catch((err) => {
     console.log("Error!!!")
     console.log(err)
 })
