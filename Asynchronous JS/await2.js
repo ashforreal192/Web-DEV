@@ -5,7 +5,7 @@ const fakeRequest = (URL) => {
             if(delay > 4000) {
                 reject("Connection Timeout :(")
             }
-            else{
+            else {
                 resolve(`Here is your fake data from ${URL}`)
             }
         }, delay)
