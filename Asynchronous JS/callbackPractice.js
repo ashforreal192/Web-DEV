@@ -108,8 +108,8 @@ async function waitForRainbow() {
         console.log("End of rainbow!")
     }
     catch(e){
-        console.log(e, "Error in waitForRainbow");
-        
+        console.log(e, "Error in waitForRainbow");        
     }
 }
+waitForRainbow()
 // Basically the same code as before.

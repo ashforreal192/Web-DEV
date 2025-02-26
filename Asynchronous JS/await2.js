@@ -22,7 +22,8 @@ async function makeTwoRequests() {
     console.log(data1)
     let data2 = await fakeRequest('/page2')
     console.log(data2)
-    } catch(e){
+    }
+    catch(e){
     console.log("Caught an error!")
     console.log("Error is:", e)    
     }
