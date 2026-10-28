@@ -27,6 +27,8 @@
 // string (keep an eye on the commas and/or 
 // spaces between the values and match that too!)
 
+
+
 const mySymbol = Symbol("key1") // THis varibale is declared to demonstrate how to insert a symbol in an object.
 
 let restaurant = {
@@ -59,6 +61,12 @@ console.log(restaurant.greeting())
 console.log(restaurant.greeting2())
 
 
+
+
+
+
+
+
 // Updating Objects
 const marks = {
     Daniel: 79,
@@ -87,7 +95,7 @@ console.log(comments[1].text) // O/P: "hell yeah!!!"
 // Difference between a singleton object and a non-singleton object declaration:
 const tinderuser = new Object() // Singleton obejct. Declared using a constructor.
 const tinderuser2 = {} // Non-Singleton obejct
-// Adding values in tinderuser2
+// Adding values in tinderuser2 (same way you can add in tinderuser as well)
 tinderuser2.id = "123abc"
 tinderuser2.name = "Samay"
 tinderuser2.isLoggedIn = false
@@ -97,7 +105,7 @@ console.log(tinderuser2)
 console.log(Object.keys(tinderuser2)) // o/p is of data type array. A useful fact to remember
 // Printing just the values:
 console.log(Object.values(tinderuser2))
-// Printing the entires individually.
+// Printing the entries individually.
 console.log(Object.entries(tinderuser2))
 // Asks if there is a particular key present in the object. Returns a boolean value.
 console.log(tinderuser2.hasOwnProperty("isLoggedIn")) // True
@@ -120,10 +128,12 @@ console.log(regularUser.fullname.lastName);
 
 // Combining objects:
 const obj1 = {
-    1: "a", 2: "b"
+    1: "a",
+    2: "b"
 }
 const obj2 = {
-    3: "c", 4: "d"
+    3: "c",
+    4: "d"
 }
 
 //Method 1

@@ -32,9 +32,10 @@ console.log(realArr)
 console.log(realArr2)
 
 // Converting a non-array datatype into an array
-console.log(Array.isArray.apply("Shatodru")) // Will give boolean response. Clearly not an array. It's a string
-// Now the conversion:
+console.log(Array.isArray("Shatodru")) // Will give boolean response. Clearly not an array. It's a string
+// Now the conversion of the string to an array:
 console.log(Array.from("Shatodru"))
+// Passing a string like "Shatodru" splits it into an array of individual characters: ['S', 'h', 'a', 't', 'o', 'd', 'r', 'u']
 
 
 // Includes: Outcome is a boolean response and it shows if something is there or not inside an array.
@@ -54,7 +55,7 @@ console.log(pets.slice(1, 4))
 console.log(pets.slice(-3))
 
 
-// Splice: The splice() method changes the contents of an array by removing or 
+// Splice: The splice() method changes the contents of the actual array by removing or 
 // replacing existing elements and/or adding new elements in place
 // Changes the original array
 let colors = ["red", "yellow", "green", "blue", "indigo", "violet"]
