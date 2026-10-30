@@ -1,3 +1,9 @@
+// Parameters are the placeholders (variable names) listed in a function's definition that act as entry points for data.
+// Think of a function like a recipe blueprint: parameters are the empty slots in the ingredient list (like liquid and protein),
+// waiting for you to pass in the actual ingredients later.
+
+
+
 function addTwoNums (number1, number2) { //number1 and number2 are parameters
     console.log(number1 + number2);
 }
@@ -5,6 +11,7 @@ console.log(addTwoNums(3, 4)) // Two numbers o/p: 7.....3 and 4 inside are argum
 console.log(addTwoNums(3, "4")) // number and string o/p: 34
 let result = addTwoNums(5, 9)
 console.log("Result: ", result) //o/p: Output: undefined. The function `addTwoNums` does not return any value; it only logs the sum to the console. Therefore, `result` is `undefined`.
+// Whereas, using return(number1 + number2) in function addTwoNums would give the result.
 
 
 // If you want the function to return the sum instead of just logging it, you can modify it like this:
@@ -20,11 +27,19 @@ function loggedIn (username) {
     return `${username} just logged in`
 }
 console.log(loggedIn("shatodru"))
+
 // or:
 let user = loggedIn("aryan")
 console.log(user)
+
+// or:
+let userTheSecond = "Gandhi"
+console.log(loggedIn(userTheSecond))
+
 // what if we pass nothing?
 console.log(loggedIn()) // o/p: undefined just logged in. Refer down to view the solution
+
+
 
 
 // A possible solution to the above problem of passing nothing.
@@ -59,7 +74,7 @@ function handleObject2 (anyObject2) {
     console.log(`Username is ${anyObject2.username} and price is ${anyObject2.price}`)
 }
 handleObject2 ({
-    username: "riya",
+    username: "Bindu",
     price: 155
 })
 

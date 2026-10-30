@@ -1,3 +1,16 @@
+// Getters and setters are special methods in JavaScript that allow you to define properties that behave like regular variables on the outside,
+// but execute custom functions on the inside.
+// They give you direct control over how an object's properties are read (get) and written (set),
+// allowing you to validate data, log changes, or compute values on the fly.
+
+
+// Syntax Breakdown
+// • Getter (get): Binds an object property to a function that will be called automatically when that property is looked up / read. It must not accept any arguments.
+// • Setter (set): Binds an object property to a function that will be called automatically when that property is assigned a new value. It accepts exactly one argument (the new value).
+
+
+
+
 class user{
     constructor(email, password){
         this.email = email
@@ -21,8 +34,8 @@ class user{
 
 const hitesh = new user("hitesh", "abs")
 console.log(hitesh);
-console.log(hitesh.password);
 console.log(hitesh.email);
+console.log(hitesh.password);
 
 // ✅ Why Use get and set?
 // Encapsulation: The real data (_password) is private.

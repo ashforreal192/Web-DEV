@@ -1,3 +1,6 @@
+// In JavaScript, loops are used to repeatedly run a block of code as long as a specified condition remains true.
+// They are essential for iterating through data structures like arrays and objects without rewriting the same code.
+
 // The idea of for loops/iterations
 
 for (

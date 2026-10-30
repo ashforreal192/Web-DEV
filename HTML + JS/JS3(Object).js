@@ -1,3 +1,8 @@
+// An object is a standalone entity that stores data as key-value pairs.
+// Unlike arrays, which order data sequentially by index, objects group related data and functionality together using descriptive names (keys/properties),
+// making them ideal for representing real-world entities.
+
+
 // In arrays, the order matters. But in objects, it dosen't. 
 // What matters is just that the required values are stored 
 // under the right references in a way that they can be accessed when needed.

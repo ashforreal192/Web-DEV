@@ -1,3 +1,13 @@
+// for...of Loop
+// Iterates directly over the values of an iterable object, such as an Array or a String. It provides a clean syntax when you only care about the items themselves, not their indices.
+
+
+// for...in loop
+// Iterates over the enumerable keys (property names) of an Object. When used on arrays, it loops through the index numbers (as strings), so it is generally reserved for objects.
+
+
+
+
 const subreddits = ['cringe', 'soccer', 'chicken', 'comedy']
 
 // Using just for:

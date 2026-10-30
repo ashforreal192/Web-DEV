@@ -1,3 +1,7 @@
+// An array is an ordered collection of values used to store multiple data items in a single variable.
+// In JavaScript, arrays can hold elements of any data type (numbers, strings, objects, or even other arrays) and are dynamically sized
+
+
 // Push adds components to the end of an array.....array.push("component")
 let myArr = [1, 2, 3, 4]
 myArr.push(5, 7)

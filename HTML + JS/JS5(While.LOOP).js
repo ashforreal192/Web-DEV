@@ -1,3 +1,6 @@
+// What's a while loop? Runs a block of code as long as a specified condition evaluates to true.
+// You must manually update the condition inside the loop to avoid creating an infinite loop.
+
 let count = 0
 while (count < 10) {
     console.log(count)
