@@ -5,8 +5,7 @@ const chai = {
     price: 250,
     isAvailable: true,
     orderChai: function(){
-        console.log("chai nahi hai");
-        
+        console.log("chai nahi hai");        
     }
 }
 

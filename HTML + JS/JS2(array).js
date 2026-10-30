@@ -49,10 +49,9 @@ console.log(pets.reverse())
 // Slice: returns a shallow copy of a portion
 // of an array into a new array object selected from start to end
 // Doesn't change the original array
-console.log(pets.slice(2))
-console.log(pets.slice(1, 4))
-// For the last three elements to show.
-console.log(pets.slice(-3))
+console.log(pets.slice(2)) // Will print the array from  index 2 till the end.
+console.log(pets.slice(1, 4)) // Will print from index 1 to 3
+console.log(pets.slice(-3)) // For the last three elements to show.
 
 
 // Splice: The splice() method changes the contents of the actual array by removing or 
@@ -63,6 +62,7 @@ let colors = ["red", "yellow", "green", "blue", "indigo", "violet"]
 console.log(colors.splice(3, 0, "white"))
 // Now type colors in the console and
 // see the new component added in there
+// What the console logs: [] (an empty array). This is because splice always returns what it deleted. Since you deleted 0 items, it returns an empty array.
 
 console.log(colors.splice(4, 1, "black"))
 // Now type colors in the console and

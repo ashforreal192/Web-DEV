@@ -52,10 +52,10 @@ console.log(restaurant[mySymbol])
 console.log(typeof restaurant[mySymbol])
 // Adding greetings to an object:
 restaurant.greeting = function(){
-    console.log("Hi viewers")
+    return("Hi viewers")
 }
 restaurant.greeting2 = function(){
-    console.log(`Hello user, welcome to ${this.name}`)
+    return(`Hello user, welcome to ${this.name}`)
 }
 console.log(restaurant.greeting())
 console.log(restaurant.greeting2())
